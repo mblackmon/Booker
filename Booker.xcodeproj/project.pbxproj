@@ -18,6 +18,11 @@
 		4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */; };
 		4A134B2521BD9E2F00F12CE6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2421BD9E2F00F12CE6 /* Models.swift */; };
 		4A134B2721BD9F8400F12CE6 /* testSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B2621BD9F8400F12CE6 /* testSearch.json */; };
+		4A134B2921BDA38600F12CE6 /* SearchSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2821BDA38600F12CE6 /* SearchSelection.swift */; };
+		4A134B2B21BDA59000F12CE6 /* NetworkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2A21BDA59000F12CE6 /* NetworkCoordinator.swift */; };
+		4A134B2D21BDA77E00F12CE6 /* RealmStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2C21BDA77E00F12CE6 /* RealmStack.swift */; };
+		4A134B2F21BDA9E300F12CE6 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2E21BDA9E300F12CE6 /* BookListViewController.swift */; };
+		4A134B3121BDAA6100F12CE6 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B3021BDAA6100F12CE6 /* GlobalFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStartViewController.swift; sourceTree = "<group>"; };
 		4A134B2421BD9E2F00F12CE6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		4A134B2621BD9F8400F12CE6 /* testSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testSearch.json; sourceTree = "<group>"; };
+		4A134B2821BDA38600F12CE6 /* SearchSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSelection.swift; sourceTree = "<group>"; };
+		4A134B2A21BDA59000F12CE6 /* NetworkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoordinator.swift; sourceTree = "<group>"; };
+		4A134B2C21BDA77E00F12CE6 /* RealmStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStack.swift; sourceTree = "<group>"; };
+		4A134B2E21BDA9E300F12CE6 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		4A134B3021BDAA6100F12CE6 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,10 @@
 				4A134B1D21BD99BB00F12CE6 /* Realm.framework */,
 				4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */,
 				4A134B2421BD9E2F00F12CE6 /* Models.swift */,
+				4A134B2821BDA38600F12CE6 /* SearchSelection.swift */,
+				4A134B2A21BDA59000F12CE6 /* NetworkCoordinator.swift */,
+				4A134B2C21BDA77E00F12CE6 /* RealmStack.swift */,
+				4A134B3021BDAA6100F12CE6 /* GlobalFunctions.swift */,
 			);
 			path = Booker;
 			sourceTree = "<group>";
@@ -117,6 +131,7 @@
 			children = (
 				4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */,
 				4A134AFE21BD98E300F12CE6 /* WelcomeViewController.swift */,
+				4A134B2E21BDA9E300F12CE6 /* BookListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -248,9 +263,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */,
+				4A134B2B21BDA59000F12CE6 /* NetworkCoordinator.swift in Sources */,
 				4A134AFF21BD98E300F12CE6 /* WelcomeViewController.swift in Sources */,
+				4A134B2921BDA38600F12CE6 /* SearchSelection.swift in Sources */,
+				4A134B2D21BDA77E00F12CE6 /* RealmStack.swift in Sources */,
+				4A134B2F21BDA9E300F12CE6 /* BookListViewController.swift in Sources */,
 				4A134AFD21BD98E300F12CE6 /* AppDelegate.swift in Sources */,
 				4A134B2521BD9E2F00F12CE6 /* Models.swift in Sources */,
+				4A134B3121BDAA6100F12CE6 /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

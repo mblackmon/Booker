@@ -12,12 +12,15 @@ import RealmSwift
 class Book: Object {
     @objc dynamic var givenKey = ""
     @objc dynamic var name = ""
+    //TODO make author a set, not just one value
     @objc dynamic var author = ""
     @objc dynamic var isSaved = false
     
     override static func primaryKey() -> String {
         return "givenKey"
     }
+    
+    static let noAuthorKey = "Unknown"
 }
 
 //MARK: Extension to interact with parsing
@@ -26,8 +29,13 @@ extension Book {
         self.init()
         givenKey = parsed.key
         name = parsed.titleSuggest
-        
+        author = parsed.authorName.first ?? Book.noAuthorKey
         isSaved = false
+    }
+    
+    func update(from parsed: ParsedBook){
+        name = parsed.titleSuggest
+        author = parsed.authorName.first ?? Book.noAuthorKey
     }
 }
 

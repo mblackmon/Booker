@@ -12,7 +12,14 @@ class SearchStartViewController: UIViewController {
 
     //MARK: User Actions
     @IBAction func searchPressed(_ sender: Any) {
-        debugPrint(#file, "search pressed")
+        guard let selection = SearchSelection(name: titleField.text?.trimmingCharacters(in: .whitespacesAndNewlines), author: authorField.text?.trimmingCharacters(in: .whitespacesAndNewlines)) else {
+            //TODO make an alert
+            return
+        }
+        NetworkCoordinator.fetchBooks(with: selection)
+        let resultsVC = BookListViewController()
+        resultsVC.searchFilter = selection
+        navigationController?.pushViewController(resultsVC, animated: true)                
     }
     
     //MARK: Lifecycle
