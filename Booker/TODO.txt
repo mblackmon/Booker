@@ -1,0 +1,10 @@
+//Things I didn't get to
+Custom cell nib files 
+no results controller
+removing a saved, and observing in the details screen
+jump to saved books
+Organize files (MARK), and directory structure
+Loading images 
+Add in Booker T Image
+More unit tests
+Fix author passing
