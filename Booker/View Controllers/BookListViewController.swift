@@ -53,6 +53,7 @@ class BookListViewController: UIViewController {
         let tv = UITableView()
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.dataSource = self
+        tv.delegate = self
         return tv
     }()
 }
@@ -71,3 +72,14 @@ extension BookListViewController: UITableViewDataSource {
         return cell
     }
 }
+
+//MARK - Delegate Conformance
+extension BookListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let book = results[indexPath.row]
+        let detailVC = BookDetailViewController()
+        detailVC.present(book)
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+}
+

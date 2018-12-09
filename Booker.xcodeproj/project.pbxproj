@@ -23,6 +23,9 @@
 		4A134B2D21BDA77E00F12CE6 /* RealmStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2C21BDA77E00F12CE6 /* RealmStack.swift */; };
 		4A134B2F21BDA9E300F12CE6 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2E21BDA9E300F12CE6 /* BookListViewController.swift */; };
 		4A134B3121BDAA6100F12CE6 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B3021BDAA6100F12CE6 /* GlobalFunctions.swift */; };
+		4A134B3421BDAFCC00F12CE6 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B3221BDAFCC00F12CE6 /* BookDetailViewController.swift */; };
+		4A134B3521BDAFCC00F12CE6 /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B3321BDAFCC00F12CE6 /* BookDetailViewController.xib */; };
+		4A134B3721BDAFE900F12CE6 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B3621BDAFE900F12CE6 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		4A134B2C21BDA77E00F12CE6 /* RealmStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStack.swift; sourceTree = "<group>"; };
 		4A134B2E21BDA9E300F12CE6 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
 		4A134B3021BDAA6100F12CE6 /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		4A134B3221BDAFCC00F12CE6 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		4A134B3321BDAFCC00F12CE6 /* BookDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailViewController.xib; sourceTree = "<group>"; };
+		4A134B3621BDAFE900F12CE6 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				4A134B2A21BDA59000F12CE6 /* NetworkCoordinator.swift */,
 				4A134B2C21BDA77E00F12CE6 /* RealmStack.swift */,
 				4A134B3021BDAA6100F12CE6 /* GlobalFunctions.swift */,
+				4A134B3621BDAFE900F12CE6 /* Protocols.swift */,
 			);
 			path = Booker;
 			sourceTree = "<group>";
@@ -132,6 +139,8 @@
 				4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */,
 				4A134AFE21BD98E300F12CE6 /* WelcomeViewController.swift */,
 				4A134B2E21BDA9E300F12CE6 /* BookListViewController.swift */,
+				4A134B3221BDAFCC00F12CE6 /* BookDetailViewController.swift */,
+				4A134B3321BDAFCC00F12CE6 /* BookDetailViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -220,6 +229,7 @@
 			files = (
 				4A134B0721BD98E400F12CE6 /* LaunchScreen.storyboard in Resources */,
 				4A134B0421BD98E400F12CE6 /* Assets.xcassets in Resources */,
+				4A134B3521BDAFCC00F12CE6 /* BookDetailViewController.xib in Resources */,
 				4A134B0221BD98E300F12CE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +275,9 @@
 				4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */,
 				4A134B2B21BDA59000F12CE6 /* NetworkCoordinator.swift in Sources */,
 				4A134AFF21BD98E300F12CE6 /* WelcomeViewController.swift in Sources */,
+				4A134B3721BDAFE900F12CE6 /* Protocols.swift in Sources */,
 				4A134B2921BDA38600F12CE6 /* SearchSelection.swift in Sources */,
+				4A134B3421BDAFCC00F12CE6 /* BookDetailViewController.swift in Sources */,
 				4A134B2D21BDA77E00F12CE6 /* RealmStack.swift in Sources */,
 				4A134B2F21BDA9E300F12CE6 /* BookListViewController.swift in Sources */,
 				4A134AFD21BD98E300F12CE6 /* AppDelegate.swift in Sources */,

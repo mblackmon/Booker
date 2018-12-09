@@ -29,20 +29,22 @@ extension Book {
         self.init()
         givenKey = parsed.key
         name = parsed.titleSuggest
-        author = parsed.authorName.first ?? Book.noAuthorKey
+        author = ""
+//        author = parsed.authorName.first ?? Book.noAuthorKey
         isSaved = false
     }
     
     func update(from parsed: ParsedBook){
         name = parsed.titleSuggest
-        author = parsed.authorName.first ?? Book.noAuthorKey
+        author = ""
+//        author = parsed.authorName.first ?? Book.noAuthorKey
     }
 }
 
 struct ParsedBook: Decodable {
     let titleSuggest: String
     let key: String
-    let authorName: [String]
+//    let authorName: [String]
 }
 
 struct SearchJSONResponse: Decodable {
