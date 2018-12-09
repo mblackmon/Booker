@@ -15,6 +15,15 @@ class RealmStack {
     class var realm: Realm {
         return try! Realm()
     }
+    
+    static func changeSavedStatus(on book: Book, to newSaveStatus:Bool){
+        let realm = RealmStack.realm
+        try? realm.write {
+            guard let fetchedBook = realm.object(ofType: Book.self, forPrimaryKey: book.givenKey) else { return }
+            fetchedBook.isSaved = newSaveStatus
+            realm.add(fetchedBook, update: true)
+        }
+    }
 }
 
 

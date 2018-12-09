@@ -48,6 +48,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wc-cn-B9u">
                                 <rect key="frame" x="114" y="174" width="147" height="30"/>
                                 <state key="normal" title="View your reading list"/>
+                                <connections>
+                                    <action selector="viewSavedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEh-N9-un5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGF-IA-UGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901.60000000000002" y="26.53673163418291"/>
+            <point key="canvasLocation" x="1396" y="35"/>
         </scene>
     </scenes>
 </document>

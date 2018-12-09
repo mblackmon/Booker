@@ -29,6 +29,8 @@ class BookDetailViewController: UIViewController, BookPresenter {
     
     
     @IBAction func saveButtonPressed(_ sender: Any) {
+        guard let book = lastPresentedBook else { return }
+        RealmStack.changeSavedStatus(on: book, to: !book.isSaved)
     }
     
     func present(_ book: Book) {
@@ -36,10 +38,3 @@ class BookDetailViewController: UIViewController, BookPresenter {
         refreshUI()
     }
 }
-
-//extension BookListViewController: BookPresenter {
-//    func present(_ book: Book) {
-//        lastPresentedBook = book
-//        updateUI()
-//    }
-//}

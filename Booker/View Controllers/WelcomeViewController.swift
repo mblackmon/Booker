@@ -10,6 +10,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBAction func viewSavedPressed(_ sender: Any) {
+        let savedVC = BookListViewController()
+        savedVC.searchFilter = SearchSelection.SavedSelection
+        navigationController?.pushViewController(savedVC, animated: true)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
