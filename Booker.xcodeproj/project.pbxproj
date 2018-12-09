@@ -13,6 +13,8 @@
 		4A134B0421BD98E400F12CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B0321BD98E400F12CE6 /* Assets.xcassets */; };
 		4A134B0721BD98E400F12CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B0521BD98E400F12CE6 /* LaunchScreen.storyboard */; };
 		4A134B1221BD98E400F12CE6 /* BookerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B1121BD98E400F12CE6 /* BookerTests.swift */; };
+		4A134B1F21BD99BB00F12CE6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A134B1D21BD99BB00F12CE6 /* Realm.framework */; };
+		4A134B2021BD99BB00F12CE6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4A134B0D21BD98E400F12CE6 /* BookerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A134B1121BD98E400F12CE6 /* BookerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookerTests.swift; sourceTree = "<group>"; };
 		4A134B1321BD98E400F12CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A134B1D21BD99BB00F12CE6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = SOURCE_ROOT; };
+		4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A134B2021BD99BB00F12CE6 /* RealmSwift.framework in Frameworks */,
+				4A134B1F21BD99BB00F12CE6 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,8 @@
 				4A134B0321BD98E400F12CE6 /* Assets.xcassets */,
 				4A134B0521BD98E400F12CE6 /* LaunchScreen.storyboard */,
 				4A134B0821BD98E400F12CE6 /* Info.plist */,
+				4A134B1D21BD99BB00F12CE6 /* Realm.framework */,
+				4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */,
 			);
 			path = Booker;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 				4A134AF521BD98E300F12CE6 /* Sources */,
 				4A134AF621BD98E300F12CE6 /* Frameworks */,
 				4A134AF721BD98E300F12CE6 /* Resources */,
+				4A134B1C21BD996000F12CE6 /* Run Script: Carthage */,
 			);
 			buildRules = (
 			);
@@ -191,6 +200,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A134B1C21BD996000F12CE6 /* Run Script: Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			name = "Run Script: Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A134AF521BD98E300F12CE6 /* Sources */ = {
@@ -362,6 +394,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3TYJB7TM8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Booker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +416,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3TYJB7TM8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Booker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

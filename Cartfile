@@ -1,0 +1,2 @@
+#persistence
+github "realm/realm-cocoa" ~> 3.0
