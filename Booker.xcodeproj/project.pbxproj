@@ -16,6 +16,8 @@
 		4A134B1F21BD99BB00F12CE6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A134B1D21BD99BB00F12CE6 /* Realm.framework */; };
 		4A134B2021BD99BB00F12CE6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */; };
 		4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */; };
+		4A134B2521BD9E2F00F12CE6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2421BD9E2F00F12CE6 /* Models.swift */; };
+		4A134B2721BD9F8400F12CE6 /* testSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B2621BD9F8400F12CE6 /* testSearch.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		4A134B1D21BD99BB00F12CE6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = SOURCE_ROOT; };
 		4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = SOURCE_ROOT; };
 		4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStartViewController.swift; sourceTree = "<group>"; };
+		4A134B2421BD9E2F00F12CE6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4A134B2621BD9F8400F12CE6 /* testSearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testSearch.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				4A134B0821BD98E400F12CE6 /* Info.plist */,
 				4A134B1D21BD99BB00F12CE6 /* Realm.framework */,
 				4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */,
+				4A134B2421BD9E2F00F12CE6 /* Models.swift */,
 			);
 			path = Booker;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				4A134B1121BD98E400F12CE6 /* BookerTests.swift */,
 				4A134B1321BD98E400F12CE6 /* Info.plist */,
+				4A134B2621BD9F8400F12CE6 /* testSearch.json */,
 			);
 			path = BookerTests;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A134B2721BD9F8400F12CE6 /* testSearch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +250,7 @@
 				4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */,
 				4A134AFF21BD98E300F12CE6 /* WelcomeViewController.swift in Sources */,
 				4A134AFD21BD98E300F12CE6 /* AppDelegate.swift in Sources */,
+				4A134B2521BD9E2F00F12CE6 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
