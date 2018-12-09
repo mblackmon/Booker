@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4A134AFD21BD98E300F12CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134AFC21BD98E300F12CE6 /* AppDelegate.swift */; };
-		4A134AFF21BD98E300F12CE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134AFE21BD98E300F12CE6 /* ViewController.swift */; };
+		4A134AFF21BD98E300F12CE6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134AFE21BD98E300F12CE6 /* WelcomeViewController.swift */; };
 		4A134B0221BD98E300F12CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B0021BD98E300F12CE6 /* Main.storyboard */; };
 		4A134B0421BD98E400F12CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B0321BD98E400F12CE6 /* Assets.xcassets */; };
 		4A134B0721BD98E400F12CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A134B0521BD98E400F12CE6 /* LaunchScreen.storyboard */; };
 		4A134B1221BD98E400F12CE6 /* BookerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B1121BD98E400F12CE6 /* BookerTests.swift */; };
 		4A134B1F21BD99BB00F12CE6 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A134B1D21BD99BB00F12CE6 /* Realm.framework */; };
 		4A134B2021BD99BB00F12CE6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */; };
+		4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,7 @@
 /* Begin PBXFileReference section */
 		4A134AF921BD98E300F12CE6 /* Booker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A134AFC21BD98E300F12CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A134AFE21BD98E300F12CE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A134AFE21BD98E300F12CE6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4A134B0121BD98E300F12CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A134B0321BD98E400F12CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A134B0621BD98E400F12CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		4A134B1321BD98E400F12CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A134B1D21BD99BB00F12CE6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = SOURCE_ROOT; };
 		4A134B1E21BD99BB00F12CE6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = SOURCE_ROOT; };
+		4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				4A134AFC21BD98E300F12CE6 /* AppDelegate.swift */,
-				4A134AFE21BD98E300F12CE6 /* ViewController.swift */,
+				4A134B2321BD9B7A00F12CE6 /* View Controllers */,
 				4A134B0021BD98E300F12CE6 /* Main.storyboard */,
 				4A134B0321BD98E400F12CE6 /* Assets.xcassets */,
 				4A134B0521BD98E400F12CE6 /* LaunchScreen.storyboard */,
@@ -102,6 +104,15 @@
 				4A134B1321BD98E400F12CE6 /* Info.plist */,
 			);
 			path = BookerTests;
+			sourceTree = "<group>";
+		};
+		4A134B2321BD9B7A00F12CE6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A134B2121BD9B6E00F12CE6 /* SearchStartViewController.swift */,
+				4A134AFE21BD98E300F12CE6 /* WelcomeViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A134AFF21BD98E300F12CE6 /* ViewController.swift in Sources */,
+				4A134B2221BD9B6E00F12CE6 /* SearchStartViewController.swift in Sources */,
+				4A134AFF21BD98E300F12CE6 /* WelcomeViewController.swift in Sources */,
 				4A134AFD21BD98E300F12CE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
