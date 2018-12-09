@@ -54,6 +54,8 @@ class BookListViewController: UIViewController {
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.dataSource = self
         tv.delegate = self
+        //TODO Custom cell
+        tv.register(UITableViewCell.self, forCellReuseIdentifier: "bookCell")
         return tv
     }()
 }
@@ -65,9 +67,10 @@ extension BookListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "bookCell") else {
+            return UITableViewCell() 
+        }
         let book = results[indexPath.row]
-        //FIXME: Reuse a tablecell
-        let cell = UITableViewCell()
         cell.textLabel?.text = book.name
         return cell
     }
